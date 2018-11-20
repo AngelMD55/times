@@ -17,33 +17,49 @@
         <i class="fas fa-camera-retro">New York Times</i>
     </div>
 
-    <form>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Search</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Search term">
+    <div class="container" style="border: 1px solid gray">
+        <form>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Search</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Search term">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Number of Records to Retrieve</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Start Year (optional)</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Start Year">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">End Year (optional)</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="End Year">
+            </div>
+        </form>
+        <div>
+                <i class="fas fa-search"><label id="search">Search</label></i>
+                <i class="fas fa-trash-alt"><label id="clear">Clear Results</label></i>
         </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect1">Number of Records to Retrieve</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlInput1">Start Year (optional)</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Start Year">
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlInput1">End Year (optional)</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="End Year">
-          </div>
-      </form>
+        
+    </div> 
 
+    <div class="container">
+        <form>
+            <div class="form-group" style="border: 1px solid gray">
+                <label for="exampleFormControlInput1"><i class="fas fa-camera-retro">Top Articles</i></label>
+                <div id="articles"></div>
+                <!-- <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Top Articles"> -->
+            </div>
+        </form>
+    </div>
 
-        <script src="./javascript.js"></script>
+    <script src="./javascript.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
