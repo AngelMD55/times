@@ -9,18 +9,22 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
     <title>NYT Article Search</title>
 </head>
 
 <body>
-    <div class="jumbotron text-center">
+    <div class="jumbotron text-center" style="background-color: blue">
         <i class="fas fa-camera-retro">New York Times</i>
     </div>
 
     <div class="container" style="border: 1px solid gray">
+            <div class="card-header">
+                    <i class="fas fa-camera-retro">Search Parameters</i>
+            </div>
         <form>
             <div class="form-group">
-                <label for="exampleFormControlInput1">Search</label>
+                <label for="exampleFormControlInput1">Search Term</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Search term">
             </div>
             <div class="form-group">
@@ -41,23 +45,28 @@
                 <label for="exampleFormControlInput1">End Year (optional)</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="End Year">
             </div>
+            <div>
+                    <i class="fas fa-search"><button id="search">Search</button></i>
+                    <i class="fas fa-trash-alt"><button id="clear">Clear Results</button></i>
+            </div>
         </form>
-        <div>
-                <i class="fas fa-search"><label id="search">Search</label></i>
-                <i class="fas fa-trash-alt"><label id="clear">Clear Results</label></i>
-        </div>
+        
     </div>
-
-    <div class="container">
+    <br>
+    
+    <div class="container" style="border: 1px solid gray">
         <form>
-            <div class="form-group" style="border: 1px solid gray">
-                <label for="exampleFormControlInput1"><i class="fas fa-camera-retro">Top Articles</i></label>
+            <div class="card-header">
+                    <i class="fas fa-camera-retro">Top Articles</i>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1"></label>
                 <div id="articles"></div>
                 <!-- <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Top Articles"> -->
             </div>
         </form>
     </div>
-
+    <hr>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
