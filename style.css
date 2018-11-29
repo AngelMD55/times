@@ -2,6 +2,14 @@
     padding: 0;
 }
 
+.jumbotron {
+    background-color: cornflowerblue;
+}
+
+.banner {
+    font-size: 60px;
+}
+
 button {
     border: none;
     background-color: inherit;
@@ -9,10 +17,12 @@ button {
     font-size: 16px;
     cursor: pointer;
     display: inline-block;
-
-
 }
 
 .form-group {
     padding: 0 20px 0 20px;
+}
+
+.search-buttons {
+    padding: 0 10px;
 }
